@@ -224,21 +224,17 @@ figure.wp-block-image a:hover, figure.wp-block-post-featured-image a:hover, figu
     }
 
 /* PAGE: Home */
-.art-page-home .art-icon {
+.art-section-about .art-icon {
     min-width: 38px;
 }
-    .art-page-home .art-grid a {
-        color: var(--wp--preset--color--ink-900);
-        text-decoration: none;
-    }
 
 /* PAGE: Services */
-.section-services .art-cover-aspect {
+.art-services-container .art-cover-aspect {
     --ratio: calc(768 / 1368);
 }
 
-    .section-services .art-service-content-col > div:first-of-type {
-        padding: clamp(1rem, -2.1406rem + 6.4257vw, 3rem);
+    .art-services-container .art-service-content-col > div:first-of-type {
+        padding: clamp(0.1rem, -2.1406rem + 6.4257vw, 3rem);
     }
 
 /* PAGES: Resources */
@@ -268,17 +264,28 @@ figure.wp-block-image a:hover, figure.wp-block-post-featured-image a:hover, figu
             background-color: var(--wp--preset--color--brand-100);
         }
 
-/* Images */
+/* IMAGES */
 .section-resources .entry-content figure:not(.art-query-container figure):not(.art-inline-cta figure):not(.art-quote figure) {
     margin: var(--wp--preset--spacing--32) 0 !important;
 }
 
-/* PROCESS STEPS */
+/* PATTERNS */
+/* Portfolio pattern */
+.art-section-portfolio .art-grid a {
+    color: var(--wp--preset--color--ink-900);
+    text-decoration: none;
+}
+
+    .art-section-portfolio .art-grid a:hover {
+        color: var(--wp--preset--color--brand-500);
+    }
+
+/* Process Steps pattern */
 .art-process-step figure {
     width: 52px;
 }
 
-/* FAQs */
+/* FAQs pattern */
 .art-faq details {
     overflow: hidden;
 }
@@ -346,6 +353,10 @@ figure.wp-block-image a:hover, figure.wp-block-post-featured-image a:hover, figu
         margin: 0 0 0 2.2rem !important;
     }
 
+    .art-faq .faq-panel ul {
+        margin: 0 0 1rem 2.2rem !important;
+    }
+
     /* Animate +/- Icon Transition */
     .art-faq details > summary::before {
         content: '';
@@ -359,7 +370,7 @@ figure.wp-block-image a:hover, figure.wp-block-post-featured-image a:hover, figu
         transition: transform 0.3s cubic-bezier(.2,.6,.2,1);
     }
 
-/* CTA */
+/* CTA patterns */
 /* Main */
 .art-cta {
     margin-top: var(--wp--preset--spacing--96) !important;
@@ -661,7 +672,7 @@ figure.wp-block-image a:hover, figure.wp-block-post-featured-image a:hover, figu
     }
 
     /* FAQs & GRIDS */
-    .faq-accordion, .art-page-home .art-grid {
+    .faq-accordion, .art-section-about .art-grid {
         display: flex !important;
         flex-direction: column;
     }
@@ -716,20 +727,13 @@ figure.wp-block-image a:hover, figure.wp-block-post-featured-image a:hover, figu
     }
 
     /* PAGE: Services */
-    .section-services .art-service-cover-col {
+    .art-services-container .wp-block-columns {
+        padding-left: clamp(1rem, 0.6087rem + 1.7391vw, 2rem);
+        padding-right: clamp(1rem, 0.6087rem + 1.7391vw, 2rem);
+    }
+
+    .art-services-container .art-service-cover-col {
         margin-bottom: var(--wp--preset--spacing--32);
-    }
-
-    .section-services .art-service-content-col {
-        text-align: center;
-    }
-
-    .section-services .art-service-content-col ul {
-        text-align: left;
-    }
-
-    .section-services .art-service-content-col > div:first-of-type {
-        gap: var(--wp--preset--spacing--24);
     }
 
     /* PAGE: Portfolio */
@@ -764,10 +768,13 @@ figure.wp-block-image a:hover, figure.wp-block-post-featured-image a:hover, figu
     .art-process-step > div > div > div:first-of-type {
         flex-basis: 52px !important;
         padding-left: 0 !important;
-        /* padding-right: 1.5rem !important; */
     }
 
     /* CTA */
+    .art-cta {
+        min-height: unset;
+    }
+    
     .art-cta .wp-block-buttons {
         justify-content: center !important;
     }

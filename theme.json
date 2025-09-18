@@ -1,5 +1,5 @@
 {
-  "settings": {
+	"settings": {
 		"appearanceTools": true,
 		"color": {
 			"customGradient": true,
@@ -423,6 +423,28 @@
 			"lineHeight": "1.6"
 		}
 	},
+	"customTemplates": [
+		{
+		"name": "wp-custom-template-page-articles",
+		"title": "Page (articles)",
+		"postTypes": ["page"]
+		},
+		{
+		"name": "wp-custom-template-post-articles",
+		"title": "Post (articles)",
+		"postTypes": ["post"]
+		},
+		{
+		"name": "wp-custom-template-page-about",
+		"title": "Page: About",
+		"postTypes": ["page"]
+		},
+		{
+		"name": "wp-custom-template-page-contact",
+		"title": "Page: Contact",
+		"postTypes": ["page"]
+		}
+	],
 	"version": 3,
 	"$schema": "https://schemas.wp.org/wp/6.8/theme.json"
 }

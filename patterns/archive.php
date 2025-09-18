@@ -1,43 +1,12 @@
 <?php
 /**
- * Title: wp-custom-template-page-about
- * Slug: artsolio2/wp-custom-template-page-about
+ * Title: archive
+ * Slug: artsolio2/archive
  * Inserter: no
  */
 ?>
 <!-- wp:group {"metadata":{"name":"Sticky Header"},"style":{"position":{"type":"sticky","top":"0px"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:template-part {"slug":"header","area":"uncategorized","align":"full"} /--></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"metadata":{"name":"Hero"},"className":"art-page-about art-hero","style":{"spacing":{"margin":{"top":"-77px"},"padding":{"top":"80px"}}},"gradient":"hero","layout":{"type":"constrained"}} -->
-<div class="wp-block-group art-page-about art-hero has-hero-gradient-background has-background" style="margin-top:-77px;padding-top:80px"><!-- wp:group {"metadata":{"name":"Content Container"},"align":"wide","className":"art-hero-content-container art-bg-img","layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group alignwide art-hero-content-container art-bg-img"><!-- wp:columns {"verticalAlignment":"center","align":"wide","className":"art-container-main art-columns art-col-reverse-sm"} -->
-<div class="wp-block-columns alignwide are-vertically-aligned-center art-container-main art-columns art-col-reverse-sm"><!-- wp:column {"verticalAlignment":"center","width":"58.33%","metadata":{"name":"Left Col"},"className":"art-col-left","style":{"spacing":{"blockGap":"var:preset|spacing|24"}}} -->
-<div class="wp-block-column is-vertically-aligned-center art-col-left" style="flex-basis:58.33%"><!-- wp:group {"className":"art-align-center-sm","layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group art-align-center-sm"><!-- wp:heading {"level":1} -->
-<h1 class="wp-block-heading"><?php /* Translators: 1. is the start of a 'span' HTML element, 2. is the end of a 'span' HTML element */ 
-echo sprintf( esc_html__( 'About %1$sMe%2$s.', 'artsolio2' ), '<span class="art-font-normal">', '</span>' ); ?></h1>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"className":"art-pad-rt-2col","style":{"layout":{"columnSpan":2}}} -->
-<p class="art-pad-rt-2col"><?php esc_html_e('With over two decades of creative problem-solving under my belt, I bring agency-level design expertise to small businesses in San Diego that need a standout presence without the overhead of a full creative team.', 'artsolio2');?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button"><?php esc_html_e('Book a Consultation', 'artsolio2');?></a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"verticalAlignment":"center","width":"","metadata":{"name":"Right Col"},"className":"art-col-right"} -->
-<div class="wp-block-column is-vertically-aligned-center art-col-right"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/freelance-desier-robb-keele.png" alt="<?php esc_attr_e('Headshot of freelance designer, Robb Keele.', 'artsolio2');?>"/></figure>
-<!-- /wp:image --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div>
-<!-- /wp:group --></div>
 <!-- /wp:group -->
 
 <!-- wp:post-content /-->

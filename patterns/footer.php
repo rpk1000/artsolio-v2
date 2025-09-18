@@ -25,6 +25,15 @@ echo sprintf( esc_html__( '%1$sContact%2$s', 'artsolio2' ), '<a href="' . esc_ur
 
 <!-- wp:paragraph -->
 <p><?php /* Translators: 1. is the start of a 'a' HTML element, 2. is the end of a 'a' HTML element */ 
-echo sprintf( esc_html__( '%1$sPrivacy Policy%2$s', 'artsolio2' ), '<a href="' . esc_url( 'https://riotters.com/policies/privacy-policy' ) . '">', '</a>' ); ?></p>
+echo sprintf( esc_html__( '%1$sPrivacy Policy%2$s', 'artsolio2' ), '<a href="' . esc_url( 'https://artsolioslidedev01.local/privacy-policy/' ) . '" data-type="page" data-id="3">', '</a>' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"metadata":{"name":"Dot"},"className":"art-footer-bullet"} -->
+<p class="art-footer-bullet"><?php esc_html_e('•', 'artsolio2');?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><?php /* Translators: 1. is the start of a 'a' HTML element, 2. is the end of a 'a' HTML element */ 
+echo sprintf( esc_html__( '%1$sSitemap%2$s', 'artsolio2' ), '<a href="' . esc_url( 'https://artsolioslidedev01.local/sitemap.xml' ) . '" data-type="page" data-id="3">', '</a>' ); ?></p>
 <!-- /wp:paragraph --></footer>
 <!-- /wp:group -->

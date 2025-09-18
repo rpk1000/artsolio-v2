@@ -239,3 +239,32 @@ add_filter( 'render_block_core/post-terms', function( $html, $block ) {
 
 	return $html;
 }, 10, 2 );
+
+/**
+ * Insert favicons into the head section of the site.
+ * Minor update to ensure favicons are loaded correctly.
+ *
+ * @since 1.0.0
+ */
+function artsolio_insert_favicons() {
+	?>
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicons/favicon-16x16.png">
+	<link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicons/site.webmanifest">
+	<?php
+}
+add_action('wp_head', 'artsolio_insert_favicons', 20);
+
+/**
+ * Add WOT validation script to the head section.
+ * This script is used for validating the site with WOT (Web of Trust).
+ *
+ * @since 1.0.0
+ */
+function artsolio_insert_wot_validation() {
+	?>
+	<meta name="wot-verification" content="6fc4c1f629106d59ffa8"/>
+	<?php
+}
+add_action('wp_head', 'artsolio_insert_wot_validation', 20);

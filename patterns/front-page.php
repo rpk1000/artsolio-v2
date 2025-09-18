@@ -184,8 +184,8 @@ echo sprintf( esc_html__( 'Web design and branding %1$sfor small businesses%2$s.
 
 <!-- wp:cover {"isUserOverlayColor":true,"customGradient":"linear-gradient(0deg,rgba(80,98,120,0.85) 0%,rgba(55,64,74,0.9) 100%)","sizeSlug":"large","metadata":{"name":"CTA"},"className":"art-cta","style":{"spacing":{"padding":{"top":"var:preset|spacing|32","bottom":"var:preset|spacing|32"}},"color":{"duotone":"var:preset|duotone|dark-grayscale"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-cover art-cta" style="padding-top:var(--wp--preset--spacing--32);padding-bottom:var(--wp--preset--spacing--32)"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient" style="background:linear-gradient(0deg,rgba(80,98,120,0.85) 0%,rgba(55,64,74,0.9) 100%)"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"align":"wide","className":"art-cta-content","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|96"}}}} -->
-<div class="wp-block-columns alignwide art-cta-content"><!-- wp:column {"width":"50%","metadata":{"name":"Left Col"}} -->
-<div class="wp-block-column" style="flex-basis:50%"><!-- wp:heading -->
+<div class="wp-block-columns alignwide art-cta-content"><!-- wp:column {"width":"50%","metadata":{"name":"Left Col"},"className":"art-center-sm"} -->
+<div class="wp-block-column art-center-sm" style="flex-basis:50%"><!-- wp:heading -->
 <h2 class="wp-block-heading"><?php esc_html_e('Ready to Get Started?', 'artsolio2');?></h2>
 <!-- /wp:heading -->
 

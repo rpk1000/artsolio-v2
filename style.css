@@ -254,6 +254,7 @@ figure.wp-block-image a:hover, figure.wp-block-post-featured-image a:hover, figu
 
         .art-sidebar-nav a:hover {
             background-color: var(--wp--preset--color--brand-300);
+            color: inherit !important;
         }
 
         .art-sidebar-nav .current-menu-item a

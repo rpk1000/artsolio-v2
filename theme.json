@@ -80,6 +80,11 @@
 					"slug": "error-900"
 				},
 				{
+					"color": "#86E278",
+					"name": "Success",
+					"slug": "success-100"
+				},
+				{
 					"color": "#FFFFFF",
 					"name": "White",
 					"slug": "white"

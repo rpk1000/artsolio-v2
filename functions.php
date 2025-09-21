@@ -49,7 +49,7 @@ add_action('wp_enqueue_scripts', function () {
  * Adds a preload link for Open Sans regular font to the <head>.
  */
 function artsolio_preload_primary_webfont() {
-    echo '<link rel="preload" as="font" type="font/woff2" crossorigin href="' . get_template_directory_uri() . '/assets/fonts/open-sans-v43-latin-regular.woff2" />\n';
+  echo '<link rel="preload" as="font" type="font/woff2" crossorigin href="' . get_template_directory_uri() . '/assets/fonts/open-sans-v43-latin-regular.woff2" />';
 }
 // Add after favicons for logical grouping (priority 21)
 add_action('wp_head', 'artsolio_preload_primary_webfont', 21);

@@ -202,9 +202,6 @@ add_filter( 'body_class', function( $classes ) {
             if ( in_array( $section, [ 'guides', 'insights', 'checklists' ], true ) ) {
                 $classes[] = 'section-resources';
             }
-        } else {
-            // No categories – fall back if you still want main nav "Resources" highlighted
-            // $classes[] = 'section-resources';
         }
     }
 
